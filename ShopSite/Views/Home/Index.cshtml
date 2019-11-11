@@ -1,0 +1,15 @@
+﻿@{
+    ViewBag.Title = "Index";
+    var products = ViewBag.Products;
+}
+
+    <a href="~/Home/Create">Add product</a>
+
+@foreach (var product in products)
+{
+    <div>
+        <h3>@product.Name</h3>
+        <h3>@product.Price</h3>
+    </div>
+}
+
